@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDYL | L'Exception Naturelle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- GSAP & Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.29/dist/lenis.min.js"></script>
+</head>
+
+<body class="loading">
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header class="fixed-header">
+        <a href="#" class="logo-link">
+            <img src="logo.svg" alt="IDYL Logo" class="logo-icon">
+            <span class="logo-text">IDYL</span>
+        </a>
+        <nav>
+            <a href="#rituels-corps" class="nav-item">Rituels Corps</a>
+            <a href="#serenite" class="nav-item">Sérénité</a>
+            <a href="#products" class="nav-item">Soins Signature</a>
+            <a href="#engagement" class="nav-item">Notre Engagement</a>
+            <a href="https://wa.me/212605764183" class="nav-btn magnetic" target="_blank">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="video-container">
+                <video autoplay muted loop playsinline>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+                <div class="overlay"></div>
+            </div>
+            <div class="hero-text">
+                <h1 class="reveal-text">IDYL</h1>
+                <p class="subtitle reveal-text">La Perfection par la Simplicité</p>
+                <div class="hero-cta reveal-text">
+                    <a href="#products" class="btn-magnetic primary">Voir les Articles</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee / Transition -->
+        <section class="marquee-section">
+            <div class="marquee-content">
+                <span>Soins Naturels &bull; Élégance Intemporelle &bull; Pureté Absolue &bull;</span>
+                <span>Soins Naturels &bull; Élégance Intemporelle &bull; Pureté Absolue &bull;</span>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="mission-section">
+            <div class="container">
+                <div class="mission-content">
+                    <h2 class="mission-title">Notre Mission</h2>
+                    <p class="mission-text">Notre mission est d'offrir à chaque personne un moment d'harmonie absolue.
+                        Nous croyons que la beauté commence par un esprit apaisé. C'est pourquoi nous concevons des
+                        rituels
+                        qui transforment votre routine en une expérience idyllique, pour une relation durable et
+                        positive avec votre corps.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Grid Products -->
+        <section id="products" class="product-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Notre Collection</h2>
+                    <p>Soins d'exception</p>
+                </div>
+
+                <div class="product-grid-pro">
+
+                    <!-- Product 1 -->
+                    <div class="product-card-pro">
+                        <div class="card-image">
+                            <img src="image.05.jpeg" alt="Eye Patches">
+                            <span class="badge">Best-Seller</span>
+                            <span class="badge-pack">Pack Disponible</span>
+                        </div>
+                        <div class="card-details">
+                            <h3>Eye Patches</h3>
+                            <p class="subtitle">Regard Sublime</p>
+                            <p class="price">99 DH</p>
+                            <div class="card-actions">
+                                <a href="https://wa.me/212605764183?text=Je%20commande%20Eye%20Patches"
+                                    class="btn-pro primary" target="_blank">Commander</a>
+                                <button class="btn-pro pack"><i class="fas fa-box"></i> Pack</button>
+                                <a href="https://wa.me/212605764183?text=Info%20Eye%20Patches" class="btn-pro secondary"
+                                    target="_blank"><i class="fas fa-comment"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card-pro">
+                        <div class="card-image">
+                            <img src="image.03.jpeg" alt="Masque">
+                            <span class="badge-pack">Pack Disponible</span>
+                        </div>
+                        <div class="card-details">
+                            <h3>Masque de Face</h3>
+                            <p class="subtitle">Éclat Instantané</p>
+                            <p class="price">60 DH</p>
+                            <div class="card-actions">
+                                <a href="https://wa.me/212605764183?text=Je%20commande%20Masque" class="btn-pro primary"
+                                    target="_blank">Commander</a>
+                                <button class="btn-pro pack"><i class="fas fa-box"></i> Pack</button>
+                                <a href="https://wa.me/212605764183?text=Info%20Masque" class="btn-pro secondary"
+                                    target="_blank"><i class="fas fa-comment"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card-pro">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?auto=format&fit=crop&w=600&q=80"
+                                alt="Savon">
+                            <span class="badge-pack">Pack Disponible</span>
+                        </div>
+                        <div class="card-details">
+                            <h3>Savon Artisanal</h3>
+                            <p class="subtitle">Pureté Naturelle</p>
+                            <p class="price">35 DH</p>
+                            <div class="card-actions">
+                                <a href="https://wa.me/212605764183?text=Je%20commande%20Savon" class="btn-pro primary"
+                                    target="_blank">Commander</a>
+                                <button class="btn-pro pack"><i class="fas fa-box"></i> Pack</button>
+                                <a href="https://wa.me/212605764183?text=Info%20Savon" class="btn-pro secondary"
+                                    target="_blank"><i class="fas fa-comment"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card-pro">
+                        <div class="card-image">
+                            <img src="image.06.jpeg" alt="Crème">
+                            <span class="badge-pack">Pack Disponible</span>
+                        </div>
+                        <div class="card-details">
+                            <h3>Crème Visage</h3>
+                            <p class="subtitle">Hydratation Intense</p>
+                            <p class="price">99 DH</p>
+                            <div class="card-actions">
+                                <a href="https://wa.me/212605764183?text=Je%20commande%20Creme" class="btn-pro primary"
+                                    target="_blank">Commander</a>
+                                <button class="btn-pro pack"><i class="fas fa-box"></i> Pack</button>
+                                <a href="https://wa.me/212605764183?text=Info%20Creme" class="btn-pro secondary"
+                                    target="_blank"><i class="fas fa-comment"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Argan Link Section -->
+        <section class="feature-section">
+            <div class="container">
+                <div class="feature-row">
+                    <div class="feature-image">
+                        <img src="image.07.jpeg" alt="Argan Tree">
+                    </div>
+                    <div class="feature-text">
+                        <h2>L’Arganier : Trésor du Maroc</h2>
+                        <p>L’arganier, arbre emblématique du sud-ouest marocain, est un véritable trésor patrimoine de
+                            l'UNESCO. Résistant et généreux, il offre l'« or liquide » : une huile précieuse aux vertus
+                            cosmétiques et nutritionnelles incomparables.</p>
+                        <a href="#" class="btn-feature">Article</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand/Collection Link Section -->
+        <section class="feature-section">
+            <div class="container">
+                <div class="feature-row reverse">
+                    <div class="feature-image">
+                        <img src="image02.jpg" alt="Collection IDYL">
+                    </div>
+                    <div class="feature-text">
+                        <h2>IDYL : Le Luxe Redéfini</h2>
+                        <p>Dans un monde où le luxe ne se mesure plus seulement à l’apparence mais à la profondeur des
+                            valeurs, IDYL réinvente le luxe cosmétique. Un projet marocain ambitieux qui unit l'héritage
+                            ancestral de l'huile d'argan et l'innovation technologique pour une expérience sensorielle
+                            unique. Du village à la ville, IDYL unit pureté et élégance.</p>
+                        <a href="#" class="btn-feature">Article</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Instagram Section -->
+    <section class="instagram-section">
+        <div class="container">
+            <h2 class="insta-title">@IDYL.OFFICIAL</h2>
+            <div class="insta-grid">
+                <a href="https://instagram.com" target="_blank" class="insta-item">
+                    <img src="image.03.jpeg" alt="Instagram 1">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="insta-item">
+                    <img src="image.05.jpeg" alt="Instagram 2">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="insta-item">
+                    <img src="image02.jpg" alt="Instagram 3">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="insta-item">
+                    <img src="image.07.jpeg" alt="Instagram 4">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verified Reviews Section -->
+    <section class="reviews-section" id="avis">
+        <div class="container">
+            <div class="section-header">
+                <h2>Avis Vérifiés</h2>
+                <p>L'authenticité avant tout</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Une expérience sensorielle exceptionnelle. Les produits IDYL ont transformé
+                        ma routine beauté en un véritable moment de détente."</p>
+                    <p class="reviewer-name">— Amina K.</p>
+                    <span class="verified-badge">✓ Achat vérifié</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Qualité irréprochable et senteurs délicates. Je recommande particulièrement
+                        les Eye Patches, un must-have!"</p>
+                    <p class="reviewer-name">— Sarah M.</p>
+                    <span class="verified-badge">✓ Achat vérifié</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Enfin une marque marocaine qui allie luxe et authenticité. Les ingrédients
+                        naturels font vraiment la différence."</p>
+                    <p class="reviewer-name">— Leila B.</p>
+                    <span class="verified-badge">✓ Achat vérifié</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Locator Section -->
+    <section class="store-locator-section">
+        <div class="container">
+            <div class="locator-content">
+                <div class="locator-text-center">
+                    <img src="logo.svg" alt="IDYL Logo" class="locator-logo">
+                    <h2>Trouvez IDYL près de chez vous</h2>
+                    <p>Découvrez nos points de vente et revendeurs agréés à travers le Maroc.</p>
+                    <a href="https://wa.me/212605764183?text=Je%20cherche%20un%20point%20de%20vente" class="btn-locator"
+                        target="_blank">
+                        <i class="fas fa-map-marker-alt"></i> Localiser un magasin
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">IDYL</div>
+                <div class="footer-social">
+                    <a href="mailto:contact@idyl.ma" class="social-icon" target="_blank" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+212605764183" class="social-icon" title="Téléphone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://instagram.com/idyl.official" class="social-icon" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com/company/idyl" class="social-icon" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
